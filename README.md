@@ -4,7 +4,7 @@ GoGreenApp is an Android application built with Java using Android Studio. It en
 
 ## ♻️ Features
 
-- 📸 Scan and recycle various items
+- 📸 Recycle various items
 - 🎯 Earn points for each recycling action
 - 🎁 Redeem points for exclusive discount coupons
 - 📊 Track your eco-friendly progress
