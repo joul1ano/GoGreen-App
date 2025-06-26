@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttons_red">#FC0324</color>
+    <color name="tirquoise">#00e6e6</color>
+    <color name="light_green">#4dff88</color>
+    <color name="light_purple">#aa80ff</color>
+    <color name="gray">#404040</color>
+    <color name="bar_color">#2d8659</color>
+    <color name="background_color_old">#FFF0EBF5</color>
+    <color name="dark_gray">#1E1D1D</color>
+    <color name="background_color">#FFFFFFFF</color>
+    <color name="light_gray">#d9d9d9</color>
+    <color name="green">#2d8659</color>
+    <color name="green_tirquoise">#39bc90</color>
+    <color name="frontColor">#e6f2ff</color>
+    <color name="behindColor">#80d4ff</color>
+    <color name="reject_color">#bc394f</color>
+</resources>

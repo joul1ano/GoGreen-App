@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <points name="plasticPoints">30</points>
+    <points name="glassPoints">50</points>
+    <points name="paperPoints">20</points>
+    <points name="aluminiumPoints">40</points>
+    <points name="oilPoints">100</points>
+    <points name="electricPoints">1000</points>
+    <points name="batteriesPoints">150</points>
+    <points name="clothesPoints">80</points>
+</resources>

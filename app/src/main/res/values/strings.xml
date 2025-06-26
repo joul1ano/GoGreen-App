@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GameApp</string>
+    <string name="button_next">NEXT</string>
+    <string name="button_show">SHOW</string>
+    <string name="glass_text">Glass</string>
+    <string name="paper_text">Paper</string>
+    <string name="aluminium_text">Aluminium</string>
+    <string name="electric_device_text">Electric devices</string>
+    <string name="battery_text">Batteries</string>
+    <string name="clothes_text">Clothing</string>
+    <string name="oil_text">Used oils</string>
+    <string name="plastic_text">Plastic</string>
+    <string name="piece_text">items</string>
+    <string name="liter_text">liters</string>
+    <string name="zero"></string>
+    <string name="points"></string>
+    <string name="points_number"></string>
+    <string name="pososto_progress"></string>
+    <string name="liters_of_oil">liters of oil</string>
+    <string name="points_text">Points</string>
+    <string name="my_activity">My activity,</string>
+    <string name="items_recycled">Items Recycled</string>
+    <string name="reward_button">reward button</string>
+    <string name="logout">Logout</string>
+    <string name="recycle">Recycle</string>
+    <string name="liters_recycled">Liters Recycled</string>
+    <string name="stats">Stats</string>
+    <string name="gogreen">GoGreen</string>
+</resources>

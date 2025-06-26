@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".christosBackup.RegisterUser">
+
+    <EditText
+        android:id="@+id/newUserPasswordInputFirst2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Repeat your password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordTextDisplayed2" />
+
+    <TextView
+        android:id="@+id/registerPasswordTextDisplayed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Confirm Password:"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/newUserPasswordInputFirst2"
+        app:layout_constraintTop_toBottomOf="@+id/newUserPasswordInputFirst" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/green_tirquoise"
+        android:fontFamily="serif"
+        android:gravity="fill_vertical"
+        android:text="   Welcome to GoGreen"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newUserUsernameInput"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Enter your username"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/newUserPasswordInputFirst"
+        app:layout_constraintStart_toStartOf="@+id/newUserPasswordInputFirst"
+        app:layout_constraintTop_toBottomOf="@+id/registerUsernameTextDisplayed" />
+
+    <TextView
+        android:id="@+id/registerUsernameTextDisplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="Username:"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserUsernameInput"
+        app:layout_constraintStart_toStartOf="@+id/newUserUsernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerText" />
+
+    <TextView
+        android:id="@+id/registerPasswordTextDisplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Password:"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/registerUsernameTextDisplayed"
+        app:layout_constraintStart_toStartOf="@+id/registerUsernameTextDisplayed"
+        app:layout_constraintTop_toBottomOf="@+id/newUserUsernameInput" />
+
+    <EditText
+        android:id="@+id/newUserPasswordInputFirst"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/newUserPasswordInputFirst2"
+        app:layout_constraintStart_toStartOf="@+id/newUserPasswordInputFirst2"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordTextDisplayed" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/green_tirquoise"
+        android:text="Create account"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_create_acc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logogreen" />
+
+    <ImageView
+        android:id="@+id/logo_create_acc_white"
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserPasswordInputFirst2"
+        app:srcCompat="@drawable/logowhite" />
+
+    <TextView
+        android:id="@+id/firstUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Create account here"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerUsernameTextDisplayed"
+        app:layout_constraintStart_toStartOf="@+id/registerUsernameTextDisplayed"
+        app:layout_constraintTop_toBottomOf="@+id/registerText"
+        app:layout_constraintVertical_bias="0.61" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

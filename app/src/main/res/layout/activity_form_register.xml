@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDFAF6F6"
+    tools:context=".tzouliano.FormRegister">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGlass"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutPaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerFormText">
+
+        <TextView
+            android:id="@+id/glassText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/glass_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/glassQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/glassMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPaper"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutAluminium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutGlass">
+
+        <TextView
+            android:id="@+id/paperText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/paper_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/paperQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/plasticMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAluminium"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutElectricDevices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPaper">
+
+        <TextView
+            android:id="@+id/aluminiumText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/aluminium_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/aluminiumQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/aluminiumMeasurementUnits"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutElectricDevices"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutBatteries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAluminium">
+
+        <TextView
+            android:id="@+id/electricDeviceText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/electric_device_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/electricDevicesQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/electricMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBatteries"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutClothing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutElectricDevices">
+
+        <TextView
+            android:id="@+id/batteriesText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/battery_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/batteriesQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/batteriesMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutClothing"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutUsedOils"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBatteries">
+
+        <TextView
+            android:id="@+id/clothesText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/clothes_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/clothesQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/clothesMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUsedOils"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutPlastic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutClothing"
+        tools:layout_editor_absoluteX="6dp">
+
+        <TextView
+            android:id="@+id/oilText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/oil_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/oilQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/oilMeasurementUnit"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/liter_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPlastic"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edges"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutUsedOils">
+
+        <TextView
+            android:id="@+id/plasticText"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:ems="9"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="@string/plastic_text"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/plasticQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:ems="3"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/green_tirquoise"
+            android:textSize="20sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/plasticUnitMeasurement"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/piece_text"
+            android:textColor="@color/green_tirquoise"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/registerFormText"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/green_tirquoise"
+        android:fontFamily="serif"
+        android:gravity="center_vertical|fill_vertical"
+        android:text=" Material registration form"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rejectBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_tirquoise"
+        android:fontFamily="serif"
+        android:text="Submit"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/relative_layout_bottom_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPlastic" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/nav_background_curved"
+            app:itemIconTint="@color/gray"
+            app:itemTextColor="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo_regist_form"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerFormText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logogreen" />
+</androidx.constraintlayout.widget.ConstraintLayout>

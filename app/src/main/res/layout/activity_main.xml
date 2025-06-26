@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginUsernameTextDisplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="Username:"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/loginUserUsernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/green_tirquoise"
+        android:text="Log in"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gotoRegisterBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign up"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/green_tirquoise"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/green_tirquoise"
+        android:fontFamily="serif"
+        android:gravity="fill_vertical"
+        android:text="   Welcome to GoGreen"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginPasswordTextDisplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Password:"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/loginUserPasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserUsernameInput" />
+
+    <EditText
+        android:id="@+id/loginUserUsernameInput"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/loginPasswordTextDisplayed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUsernameTextDisplayed" />
+
+    <EditText
+        android:id="@+id/loginUserPasswordInput"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordTextDisplayed" />
+
+    <TextView
+        android:id="@+id/dont_have_account_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Don't have an account?"
+        android:textColor="@color/green_tirquoise"
+        app:layout_constraintBottom_toTopOf="@+id/gotoRegisterBtn"
+        app:layout_constraintStart_toStartOf="@+id/gotoRegisterBtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Please enter your details"
+        android:textColor="@color/green_tirquoise"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginUsernameTextDisplayed"
+        app:layout_constraintStart_toStartOf="@+id/loginUsernameTextDisplayed"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <ImageView
+        android:id="@+id/logo_sign_in"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logogreen" />
+
+    <ImageView
+        android:id="@+id/logo_sign_in_white"
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserPasswordInput"
+        app:srcCompat="@drawable/logowhite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
