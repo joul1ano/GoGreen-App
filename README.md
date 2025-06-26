@@ -1,25 +1,5 @@
-# GoGreenApp 🌿
+# GoGreenApp
 
-GoGreenApp is an Android application built with Java using Android Studio. It encourages users to recycle items by rewarding them with points that can be redeemed for real-world coupons.
+This is a simple Android application built using Java in Android Studio. The app encourages recycling by allowing users to scan items, collect points, and redeem them for discount coupons. It uses SQLite for local data storage and is structured using Android Studio activities.
 
-## ♻️ Features
-
-- 📸 Recycle various items
-- 🎯 Earn points for each recycling action
-- 🎁 Redeem points for exclusive discount coupons
-- 📊 Track your eco-friendly progress
-
-## 🚀 Tech Stack
-
-- Java
-- Android Studio
-- SQLite (or Firebase, if used)
-
-## 📱 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/GoGreenApp.git
-2. Open with Android Studio
-
-3. Build and run on an emulator or physical device
+Users are rewarded for recycling actions and can view their progress through statistics displayed in pie charts and bar graphs.
